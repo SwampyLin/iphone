@@ -53,7 +53,7 @@ $('.screen').click(function () {
   screen_adudio.play()
 })
 
-$('.button').click(function () {
+$('.home').click(function () {
   page = 0
   $('.pages').css('left', '-' + page * 100 + '%')
   home_adudio.play()
