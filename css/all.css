@@ -1,0 +1,168 @@
+@charset "UTF-8";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: unset;
+  padding: unset;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 微軟正黑體;
+}
+
+.phone {
+  width: 200px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  left: unset;
+  margin-bottom: 20px;
+}
+
+.top {
+  height: 40px;
+}
+.top .camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #222;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.screen {
+  height: 350px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.screen .pages {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition-duration: 0.5s;
+  left: unset;
+  position: relative;
+}
+.screen .pages .page {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: #eee;
+  font-size: 0.75rem;
+  display: inline-block;
+  background-color: #333;
+  box-sizing: border-box;
+  white-space: normal;
+  vertical-align: top;
+  position: relative;
+}
+.screen .pages .page:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #ffab36;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+}
+.screen .pages .page:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  background-color: #ffab36;
+  height: 20px;
+  width: 100%;
+  z-index: 1;
+}
+.screen .pages .page1 {
+  background-color: #ffab36;
+  color: #f3f3f3;
+}
+.screen .pages .page1 .orange {
+  width: 300px;
+  height: 300px;
+  background-color: #ff9603;
+  border-radius: 100%;
+}
+
+.bottom {
+  height: 60px;
+  position: relative;
+}
+.bottom .home {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: rgba(0, 0, 0, 0.4);
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  font-size: 1.75rem;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.bottom .home:hover {
+  background-color: #a2a2a2;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #f3f3f3;
+  font-size: 1.875rem;
+  margin-top: unset;
+  z-index: 2;
+  position: relative;
+}
+
+h2 {
+  color: #f3f3f3;
+  font-size: 1.25rem;
+  margin: unset;
+  z-index: 2;
+  position: relative;
+}
+h2.phonename {
+  margin: 10px;
+}
+
+h3 {
+  color: #f3f3f3;
+  margin: unset;
+  font-size: 1rem;
+}
+
+p {
+  color: #f3f3f3;
+}
+
+button {
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  color: #f3f3f3;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f3f3f3;
+  color: #222;
+}/*# sourceMappingURL=all.css.map */
